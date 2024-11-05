@@ -58,17 +58,22 @@ li{
 }
 .description button,
 .content-4 button{
-  padding: 10px 50px 10px 50px;
+  padding: 10px 50px;
   margin: 10px auto 10px 0px;
   font-size: 24px;
   border-radius: 30px;
   align-self: center;
   border-style: none;
-  /* border-color: #09b009; */
   background-color: #2fd62f;
   color: white;
   font-weight: 900;
   box-shadow: 0 0 3px #1F2937;
+  transition: padding 300ms;
+}
+.description button:hover,
+.content-4 button:hover{
+  cursor: pointer;
+  padding: 12px 50px;
 }
 img{
   max-width: 100%;
