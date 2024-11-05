@@ -56,7 +56,8 @@ li{
   color: #525c6e;
   font-size: 24px;
 }
-.description button{
+.description button,
+.content-4 button{
   padding: 10px 50px 10px 50px;
   margin: 10px auto 10px 0px;
   font-size: 24px;
@@ -103,4 +104,46 @@ img{
   font-weight: 900;
   font-size: 28px;
   margin-top: 0px;
+}
+.content-3{
+  align-items: center;
+  padding: 150px;
+  justify-content: center;
+  background-color: rgb(245, 235, 203);
+}
+.content-3 .quote{
+  margin: auto;
+  font-size: 30px;
+  flex-basis: 500px;
+  color: rgb(57, 57, 57);
+}
+.content-3 .author{
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(130, 122, 110);
+}
+.content-4{
+  background-color: #485161;
+}
+.content-4 h1,
+.content-4 p{
+  color: white;
+}
+.content-4 p{
+  font-size: 24px;
+}
+.banner{
+  padding: 20px;
+}
+.content-4 button{
+  font-size: 20px;
+  background-color: rgb(99, 155, 137);
+}
+.footer{
+  color: white;
+  background-color: #485669;
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
 }
