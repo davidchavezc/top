@@ -75,3 +75,32 @@ img{
   align-self: center;
   overflow: auto;
 }
+.content-2{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+}
+.content-2 h1{
+  margin: auto;
+  justify-self: center;
+}
+.info-container{
+  display: flex;
+}
+.photo-cnt{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  text-align: center;
+  padding: 20px;
+}
+.photo-cnt img{
+  margin-bottom: 0px;
+  flex-shrink: 1;
+}
+.photo-cnt p{
+  font-weight: 900;
+  font-size: 28px;
+  margin-top: 0px;
+}
