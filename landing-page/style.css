@@ -22,6 +22,12 @@ em{
 }
 .wordmark{
   font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 0 0 3px ;
+  transition: text-shadow 300ms;
+}
+.wordmark:hover{
+  text-shadow: 0 0 5px;
+  cursor: pointer;
 }
 .header ul{
     display: flex;
@@ -86,6 +92,7 @@ img{
   justify-content: center;
   margin: auto;
   flex-direction: column;
+  padding: 20px;
 }
 .content-2 h1{
   margin: auto;
@@ -106,9 +113,10 @@ img{
   flex-shrink: 1;
 }
 .photo-cnt p{
-  font-weight: 900;
-  font-size: 28px;
+  font-weight: 600;
+  font-size: 26px;
   margin-top: 0px;
+  color: rgb(95, 95, 80);
 }
 .content-3{
   align-items: center;
@@ -129,6 +137,7 @@ img{
 }
 .content-4{
   background-color: #485161;
+  padding-left: 80px;
 }
 .content-4 h1,
 .content-4 p{
