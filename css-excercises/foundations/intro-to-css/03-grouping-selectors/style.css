@@ -1,0 +1,12 @@
+.sel1,
+.sel2{
+    font-family: Helvetica, sans-serif;
+    font-size: 28px;
+}
+.sel1{
+    color: white;
+    background-color: black;
+}
+.sel2{
+    background-color: yellow;
+}
