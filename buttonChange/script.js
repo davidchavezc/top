@@ -1,4 +1,4 @@
-const colors = [
+const skibidi = [
     { value: 500, color: '#3d00d6', rarity: 0.1, colorName: 'Mega Camera Man' }, 
     { value: 25, color: '#B3CDE0', rarity: 0.2, colorName: 'Skibidi toilet' },
     { value: 100, color: '#C1E1C1', rarity: 0.3, colorName: 'Camera man' },
@@ -11,23 +11,37 @@ const colors = [
     { value: 25000 , color: '#FFD700', rarity: 0.01, colorName: 'DigitalCircusSkibdiPomniGigaChadSigmaVoid' },
     { value: 500000 , color: '#rainbow', rarity: 0.005, colorName: 'DigitalCircusSkibdiPomniGigaChadSigmaVoidChambaEdgingGoonerKaiCenatLolCow' }
 ];
+const tierProperties = [
+    { tierName: 'common', color: '#dbe0d3' },
+    { tierName: 'uncommon', color: '#89dd00' },
+    { tierName: 'rare', color: '#23baff' },
+    { tierName: 'epic', color: '#7f19dd' },
+    { tierName: 'legendary', color: '#e7a617' },
+    { tierName: 'mythic', color: '#e90000' },
+    { tierName: 'omega', color: '#rainbow'}
+]
+
 
 let score = 0;
 
-function getRandomColor() {
+function generateSkibidi() {
     const random = Math.random();
     let sum = 0;
 
-    for (let i = 0; i < colors.length; i++) {
-        sum += colors[i].rarity;
+    for (let i = 0; i < skibidi.length; i++) {
+        sum += skibidi[i].rarity;
         if (random <= sum) {
-            return colors[i];
+            return skibidi[i];
         }
     }
 }
 
+function getTierProperties(skibidi){
+
+}
+
 function changeTextColorAndUpdateScore() {
-    const selectedColor = getRandomColor();
+    const selectedColor = generateSkibidi();
     const scoreElement = document.getElementById('score');
     const rarityElement = document.getElementById('rarity');
     const skibidiElement = document.getElementById('skibidi');
