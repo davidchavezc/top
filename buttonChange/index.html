@@ -9,7 +9,7 @@
     <button id="changeColorButton">SKIBDI!</button>
     <p id="score">Skibidi points: 0</p>
     <p id="rarity">Rarity: 0</p>
-    <p id="color">Current color: 0</p>
+    <p id="skibidi">Current color: 0</p>
 
     <script src="script.js"></script>
 </body>
@@ -21,13 +21,29 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: black;
     }
     p{
-        text-shadow: 0 0 1px #0b0b0b;
+        text-shadow: 0 0 3px #e4e4e4;
+        color: white;
+        font-family: "Comic Sans Ms";
     }
     button{
         outline: none;
         border-style: none;
     }
+    @keyframes rainbow {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
 
+        .rainbow {
+            animation: rainbow 2s infinite;
+        }
 </style>
