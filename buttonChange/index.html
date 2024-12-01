@@ -9,6 +9,7 @@
 <body>
     <div class="bottom">
         <button id="changeColorButton">Skibidi!!</button>
+        
     </div>
     <div class="top">
         <div class="container" id="playModule">
@@ -16,11 +17,17 @@
             <p id="rarity">Rarity: 0</p>
             <p id="skibidi">Current color: 0</p>
         </div>
-        <div class="container" id="historyModule">
+        <div class="container">
             <h1>Historial</h1>
-            <ul></ul>
+            <div id="historyModule">
+                <ul id="skibidiHistory"></ul>
+            </div>
         </div>
     </div>
+    <footer>
+        <button id="darkModeButton">Toggle Dark Mode</button>
+        <button id="highContrastButton">Toggle High Contrast</button>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
