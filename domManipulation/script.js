@@ -1,0 +1,13 @@
+const container = document.querySelector("#container");
+const declaration = document.createElement("p");
+const secondDeclaration = document.createElement("p");
+const thirdDeclaration = document.createElement("p");
+declaration.textContent = "The ten dollar, founding father without a father..!!";
+container.appendChild(declaration);
+declaration.classList.add("redText");
+secondDeclaration.textContent = "I want a revelation";
+container.appendChild(secondDeclaration);
+secondDeclaration.classList.add("blueText");
+thirdDeclaration.textContent = "Yesterday somebody wacced out my mural";
+container.appendChild(thirdDeclaration);
+thirdDeclaration.classList.add("greenText");
