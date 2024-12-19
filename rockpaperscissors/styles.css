@@ -31,3 +31,8 @@ h1{
     font-size: 25px;
     background-color: rgb(232, 232, 232);
 }
+.scoreText{
+    font-size: 2em;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
