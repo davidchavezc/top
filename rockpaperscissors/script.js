@@ -2,10 +2,13 @@ function getComputerChoice(){
     let computerChoice = parseInt(Math.random() * 3) + 1; // Generates a random number between 1 and 3
     return computerChoice;
 }
+
+const scoreKeeper = document.getElementById('#score');
+const winnerKeeper = document.getElementById('#ganador');
+
 let userScore = 0;
 let rivalScore = 0;
 let exit = false;
-let welcomeMessage = '***ROCA, PAPIRO, O NAVAJA*** \nIndique su elección: \n1. Roca \n2. Papiro \n3. Navaja';
 console.log(welcomeMessage); alert(welcomeMessage);
 while(5 > (userScore+rivalScore)){
     let userChoice = prompt('Elige un objeto').toLowerCase();
