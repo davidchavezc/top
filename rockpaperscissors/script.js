@@ -3,13 +3,9 @@ function getComputerChoice(){
     return computerChoice;
 }
 
-const scoreKeeper = document.getElementById('#score');
-const winnerKeeper = document.getElementById('#ganador');
-
 let userScore = 0;
 let rivalScore = 0;
 let exit = false;
-console.log(welcomeMessage); alert(welcomeMessage);
 while(5 > (userScore+rivalScore)){
     let userChoice = prompt('Elige un objeto').toLowerCase();
     console.log(`Has elegido ${userChoice}`);

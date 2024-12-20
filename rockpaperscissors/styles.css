@@ -11,6 +11,22 @@ h1{
     text-align: center;
     color: rgb(57, 57, 57);
 }
+#scoreDisplay{
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: rgb(79, 72, 72);
+    /* outline: 2px rgba(50, 50, 50, 100) solid; */
+    background-color: rgb(244, 190, 120);
+    padding: 1em 3em;
+    border-radius: 5em;
+    box-shadow: 0 0 0.8em #63616158;
+    /* margin: 0px; */
+}
+.scoreText{
+    font-size: 1.5em;
+}
 .selectButtons{
     font-size: 28px;
     margin: 2em 1em;
@@ -30,9 +46,4 @@ h1{
 .selectButtons:active{
     font-size: 25px;
     background-color: rgb(232, 232, 232);
-}
-.scoreText{
-    font-size: 2em;
-    font-family: 'Open Sans';
-    font-weight: 600;
 }
