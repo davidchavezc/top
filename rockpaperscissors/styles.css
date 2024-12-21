@@ -1,49 +1,37 @@
-*{
+* {
     font-family: 'Open Sans';
 }
 body{
-    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: antiquewhite;
 }
 h1{
     text-align: center;
-    color: rgb(57, 57, 57);
+    font-size: 4em;
 }
-#scoreDisplay{
-    text-align: center;
+button{
     font-size: 1em;
-    font-family: 'Open Sans';
-    font-weight: 600;
-    color: rgb(79, 72, 72);
-    /* outline: 2px rgba(50, 50, 50, 100) solid; */
-    background-color: rgb(244, 190, 120);
-    padding: 1em 3em;
-    border-radius: 5em;
-    box-shadow: 0 0 0.8em #63616158;
-    /* margin: 0px; */
-}
-.scoreText{
-    font-size: 1.5em;
-}
-.selectButtons{
-    font-size: 28px;
-    margin: 2em 1em;
-    justify-content: center;
-    font-weight: 700;
+    width: 8em;
+    box-shadow: 0 0 0.1em;
+    border-radius: 2em;
+    background-color: #f6eded;
+    transition: font-size 0.3s, color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    align-items: space-between;
     border: none;
-    background-color: white;
-    padding: 0.5em 1em;
-    border-radius: 1.2em;
-    transition: box-shadow 0.3s, font-size 0.3s, color 0.3s;
 }
-.selectButtons:hover{
-    cursor: pointer;
-    box-shadow: 0 0 0.5em #02a7e8bf;
-    outline: 2px rgba(0, 115, 255, 0.824);
+p{
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 0 0 1px 0.5em #606060a7;
 }
-.selectButtons:active{
-    font-size: 25px;
-    background-color: rgb(232, 232, 232);
+button:hover{
+    font-size: 1.2em ;
+    background-color: #ededed;
+    box-shadow: 0 0 0.5em #2185ff;
+}
+.choices{   
+    margin: 0.6em auto;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
