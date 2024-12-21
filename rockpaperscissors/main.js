@@ -73,5 +73,12 @@ buttons.forEach((button) => {
             winner === 'user' ? userScore++ : rivalScore++; 
         }
         scores.textContent = `${userName}: ${userScore} Rival: ${rivalScore}`;
+        const announceWinner = document.createElement('p');
+        if(userScore >= 5){
+            announceWinner.textContent = `The winner is ${userName}!!`;
+        } else if (rivalScore >= 5){
+            announceWinner.textContent = `The rival wins! Too bad :(`;
+        }
+        scores.appendChild(announceWinner);
     })
 })
