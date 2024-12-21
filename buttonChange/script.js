@@ -118,3 +118,7 @@ function toggleHighContrast() {
 document.getElementById('changeColorButton').addEventListener('click', changeTextColorAndUpdateScore);
 document.getElementById('darkModeButton').addEventListener('click', toggleDarkMode);
 document.getElementById('highContrastButton').addEventListener('click', toggleHighContrast);    
+
+for(i=0;5>=i;i++){
+    console.log('Hola Juanito')
+}
