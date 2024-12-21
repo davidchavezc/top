@@ -1,26 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="styles.css">
-    <title>Piedra, Papel y Tijeras</title>
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <h1 id="title">PIEDRA, PAPEL, O TIJERAS</h1>
-    <div id="choiceContainer" class="container">
-        <button id="rock" class="selectButtons">Roca</button>
-        <button id="paper" class="selectButtons">Papel</button>
-        <button id="scissors" class="selectButtons">Tijeras</button>
-    </div>
-    <div id="ganador"></div>
-    <section id="scoreDisplay">
-        <h2>Puntuación</h2>
-        <p id="score" class="scoreText">Tú: 0 Rival: 0</p>
-    </section>
+    <h1>Rock, Paper, Scissors</h1>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+    <ul>
+        <li id="userScore">Score: 0</li>
+        <li id="rivalScore">Rival: 0</li>
+    </ul>
 </body>
-<script src="main.js"></script>
 </html>
