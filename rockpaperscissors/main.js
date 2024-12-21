@@ -1,4 +1,4 @@
-userName = 'David';
+userName = prompt('Enter your name: ');
 let userScore = 0;
 let rivalScore = 0;
 const buttons = document.querySelectorAll('button');
