@@ -1,0 +1,115 @@
+*{
+        font-family: "Comic Sans MS";
+        font-weight: 900;
+        font-size: 48px;
+        /* color: white;  */
+        /* outline: solid red 1px; */
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: black; */
+    background-color: white;
+    color: black;
+    margin-top: auto;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* High contrast mode styles */
+body.high-contrast {
+    background-color: yellow;
+    color: black;
+}
+
+/* Additional styles for elements in dark mode and high contrast mode */
+body.dark-mode #historyModule,
+body.high-contrast #historyModule {
+    background-color: inherit;
+    color: inherit;
+}
+
+.top{
+
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-self: flex-start; */
+    /* justify-content: space-evenly; */
+}
+.bottom{
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    text-align: center;
+}
+#historyModule{
+    max-height: 500px;
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#historyModule::-webkit-scrollbar {
+    display: none;
+}
+
+#historyModule ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#historyModule li {
+    margin: 5px 0;
+}
+
+p{
+    text-shadow: 0 0 3px #e4e4e4;
+    text-align: center;
+    
+}
+ button{
+    outline: none;
+    border-style: none;
+    width: 400px;
+    height: auto;
+    color: black;
+    box-shadow: 0 0 3px #484848a9;
+}
+li{
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+@keyframes rainbow {
+0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+.rainbow{
+    animation: rainbow 2s infinite;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+footer button{
+    font-size: 30px;
+}
