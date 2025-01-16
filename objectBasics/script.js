@@ -1,18 +1,25 @@
-function multiplyNumeric(obj){
-    for(let values in obj){
-        if(typeof(obj[values]) === "number"){
-            obj[values]*=2;
-        }
+/* Take in an array.
+For every even number, it will triple it.
+Then it will sum all those even numbers. */
+
+let nums = [1, 2, 3, 4, 5]
+
+function isEven (num) {
+    if(num % 2 === 0){
+        return true;
     }
 }
-
-let menu = {
-    width: 200,
-    height: 300,
-    title: "Im going to school"
-};
-
-multiplyNumeric(menu);
-for(let property in menu){
-    console.log(menu[property]);
+function triple(num){
+    num*=3;
+    // console.log(num)
+    return num;
 }
+console.log(nums)
+evenNums = nums.filter(isEven);
+console.log(evenNums)
+tripledEvenNumbers = evenNums.map(triple);
+console.log(tripledEvenNumbers)
+const sumOfTripledEvenNumbers = tripledEvenNumbers.reduce((total, currentValue) => {
+    return total + currentValue;
+})
+console.log(sumOfTripledEvenNumbers)
